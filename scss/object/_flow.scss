@@ -1,0 +1,76 @@
+.flow {
+  padding: 60px 40px;
+  @include overTab {
+    padding: 80px 60px;
+  }
+  .flow-list {
+    margin-top: 40px;
+    @include overTab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .flow-item {
+      margin-bottom: 20px;
+      @include overTab {
+        display: flex;
+        width: 20%;
+        padding-right: 20px;
+      }
+      .flow-text {
+        text-align: center;
+        @include overTab {
+          padding-right: 20px;
+        }
+        .title {
+          margin-bottom: 15px;
+          line-height: 1.5;
+          @include overTab {
+            text-align: center;
+            padding-bottom: 10px;
+          }
+        }
+        .desc {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .arrow{
+      @include overTab {
+        position: relative;
+        display: inline-block;
+        padding-left: 20px;
+      }
+    }
+    .arrow::before{
+      @include overTab {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border: 0px;
+        border-top: solid 2px #5bc0de;
+        border-right: solid 2px #5bc0de;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -4px;
+      }
+    }
+    .down-arrow {
+      display: block;
+      width: 0;
+      height: 0;
+      margin: 0 auto;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid rgb(151, 205, 212);
+      @include overTab {
+        display: none;
+      }
+    }
+  }
+}

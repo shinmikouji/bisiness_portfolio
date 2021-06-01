@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-fixed">
+      <h1 class="header-title">Koji's Site</h1>
+      <button class="nav-btn" id="nav-btn" type="button" area-label="メニュー"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav header-nav" id="nav">
+        <nav>
+            <ul class="header-list">
+                <li class="header-item"><a href="#concept">事業概念</a></li>
+                <li class="header-item"><a href="#service">サービス</a></li>
+                <li class="header-item"><a href="#works">実績</a></li>
+                <li class="header-item"><a href="#flow">制作の流れ</a></li>
+                <li class="header-item"><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-text">
+        <h2 class="top-title">想いに寄り添う<br>想いに繋げる</h2>
+        <p class="top-desc">つくるものを通して人と人が繋がり<br>新しい価値が生まれ、気持ちや想いが届く。<br>そんなお手伝いができればと考えています。</p>
+      </div>
+    </div>
+
+    <section class="aboutme">
+      <div class="inner">
+        <h2 class="cmn-title">私について</h2>
+        <img src="./image/myphoto.JPG" alt="新見晃司の写真" class="myphoto">
+        <h2 class="introduce">自己紹介</h2>
+        <div class="intro-cont">
+          <p class="intro-text">初めまして。WEBエンジニアの新見晃司(しんみこうじ)と申します。<br>現在フロントエンドを中心に、Webサイト制作及びWebアプケーションの作成を行っております。<br>「<span>質</span>」と「<span>スピード</span>」を重視することで、期待以上のものを提供させていただきます。<br>また、お客様に寄り添った丁寧かつ迅速なコミュニケーションを心掛け、最後まで責任を持って、仕事に取り組ませていただきます。</p>
+        </div>
+        <h2 class="education">経歴</h2>
+        <div class="education-cont">
+          <p class="edu-text">1997年: 京都府城陽市出身<br>2016年: 京都府立莵道高等学校<br>2020年: 同志社大学政策学部政策学科卒業</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="concept" id="concept">
+      <div class="inner">
+        <h2 class="cmn-title">事業概念</h2>
+        <ul class="concept-list">
+          <li class="concept-item" id="concept-safe">
+            <div class="concept-logo"><i class="far fa-heart fa-3x"></i></div>
+            <div class="text">
+              <div class="concept-title">安心の対応</div>
+              <p class="concept-desc">ご相談〜納品まで責任を持って対応いたします。ご不明点がある場合・新たなご希望が出てきた場合もお気軽にご相談いただけます。</p>
+            </div>
+          </li>
+          <li class="concept-item" id="concept-quality">
+            <div class="concept-logo"><i class="far fa-handshake fa-3x"></i></div>
+            <div class="text">
+              <div class="concept-title">高品質</div>
+              <p class="concept-desc">コミュニケーションを取り、認識を合わせる作業を大切にしています。クライアント様、更には、クライアント様のお客様に寄り添った「ご提案」をいたします。</p>
+            </div>
+          </li>
+          <li class="concept-item" id="concept-cost">
+            <div class="concept-logo"><i class="fas fa-yen-sign fa-3x"></i></div>
+            <div class="text">
+              <div class="concept-title">低コスト</div>
+              <p class="concept-desc">「Webサイトは欲しいけど、高くて手が出せない…」そんなお悩みありませんか？コスパ良くクオリティが高いサイトを作りたい方、管理費用を安くしたい方におすすめです。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+      <div class="inner">
+        <h2 class="cmn-title">サービス</h2>
+        <ul class="service-list">
+          <li class="service-item" id="service-coding">
+            <img src="./image/coding.jpg" alt="コーディングの画像" class="coding-image">
+            <h2 class="title">コーディング</h2>
+            <div class="text">
+              <p class="desc">LPやコーポレートサイト、ブログなど、 目的に応じた適切なコーディングを行います(レスポンシブ対応可)。また、軽微なコードの修正などにも対応しています。
+              </p>
+              <p class="price">【料金目安】<br>
+                コード修正: ¥10,000~/1p<br>
+                LP制作: ¥20,000~/1p</p>
+            </div>
+          </li>
+          <li class="service-item" id="service-design">
+            <img src="./image/design.jpg" alt="webデザインの画像">
+            <h2 class="title">Webデザイン</h2>
+            <div class="text">
+              <p class="desc">ヒアリングにより、ご要望に沿ったデザインを的確に把握し作成致します。 ユーザーインターフェースを重要視した設計を行い、ご期待を超える提案を提供します。
+              </p>
+              <p class="price">【料金目安】<br>
+                LP制作: ¥30,000~/1p<br>
+                コーポレートサイト (10p以下): ¥80,000~</p>
+            </div>
+          </li>
+          <li class="service-item" id="service-wordpress">
+            <img src="./image/wordpress.jpg" alt="wordpressの画像">
+            <h2 class="title">Wordpress</h2>
+            <div class="text">
+              <p class="desc">コーポレートサイトや個人ブログ、およびウェブマガジンなどのWordPressサイトの構築や既存サイトのWordPress移行、コードの修正に対応しております。
+              </p>
+              <p class="price">【料金目安】<br>
+                Wordpress移行: ¥100,000~<br>
+                Wordpress制作: ¥200,000~</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="inner">
+        <h2 class="cmn-title">実績</h2>
+        <div class="works-cont">
+          <ul class="work-list">
+            <li class="work-item">
+              <div class="image">
+                <img src="" alt="">
+              </div>
+              <div class="text">
+                <p></p>
+              </div>
+            </li>
+            <li class="work-item">
+              <div class="image">
+                <img src="" alt="">
+              </div>
+              <div class="text">
+                <p></p>
+              </div>
+            </li>
+            <li class="work-item">
+              <div class="image">
+                <img src="" alt="">
+              </div>
+              <div class="text">
+                <p></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="flow" id="flow">
+      <div class="inner">
+        <h2 class="cmn-title">制作の流れ</h2>
+        <ul class="flow-list">
+          <li class="flow-item" id="step1">
+            <div class="flow-text">
+              <h3 class="title">STEP1<br>お問い合わせ</h3>
+              <p class="desc">お問い合わせフォームよりご連絡ください。</p>
+            </div>
+            <i class="arrow"></i>
+            <i class="down-arrow"></i>
+          </li>
+          <li class="flow-item" id="step2">
+            <div class="flow-text">
+              <h3 class="title">STEP2<br>ヒアリング・打ち合せ</h3>
+              <p class="desc">イメージや目的などをヒアリングし、大まかなレイアウトなどを決め、お見積もりを出させていただきます。</p>
+            </div>
+            <i class="arrow"></i>
+            <i class="down-arrow"></i>
+          </li>
+          <li class="flow-item" id="step3">
+            <div class="flow-text">
+              <h3 class="title">STEP3<br>制作</h3>
+              <p class="desc">ご契約後、認識を合わせながらお客様の目的に合わせた制作を進めさせていただきます。</p>
+            </div>
+            <i class="arrow"></i>
+            <i class="down-arrow"></i>
+          </li>
+          <li class="flow-item" id="step4">
+            <div class="flow-text">
+              <h3 class="title">STEP4<br>納品・アフターケア</h3>
+              <p class="desc">実装したホームページをご確認いただき、修正などなければ納品となります。納品から30日間は無償で対応いたします。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="inner">
+        <h2 class="contact-title">お問い合わせ</h2>
+        <p class="contact-nav"><a href="">無料相談はこちら</a></p>
+        <p class="contact-desc">お気軽にお問い合わせ ・ご相談ください。<br>24時間以内に必ずご返信いたします。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="inner">
+      <p class="copyright">copyright &copy; 2021 Koji Shinmi's portfolio All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

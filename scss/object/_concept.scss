@@ -1,0 +1,44 @@
+.concept {
+  padding: 60px 40px;
+  background-color: rgb(240, 239, 239);
+  @include overTab {
+    padding: 80px 60px;
+  }
+  .concept-list {
+    margin-top: 60px;
+    @include overTab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .concept-item {
+      text-align: center;
+      width: 100%;
+      @include overTab {
+        width: 25%;
+        text-align: center
+      }
+      + .concept-item {
+        margin-top: 40px;
+        @include overTab {
+          margin-left: 20px;
+        }
+      }
+      .concept-logo {
+        color: aquamarine;
+      }
+      .text {
+        margin-top: 30px;
+        .concept-title {
+          font-size: 20px;
+          font-size: 2rem;
+        }
+        .concept-desc {
+          margin-top: 10px;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+}

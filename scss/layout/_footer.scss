@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #ccc;
+  text-align: center;
+  @include overTab {
+    padding: 30px 0;
+  }
+  .copyright {
+    font-size: 12px;
+    font-size: 1.2rem;
+    @include overTab {
+      font-size: 13px;
+      font-size: 1.3rem;
+    }
+  }
+}

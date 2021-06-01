@@ -1,0 +1,53 @@
+.contact {
+  color: #fff;
+  padding: 0 0 50px;
+  @include overTab {
+    padding: 0 0 90px;
+  }
+  .inner {
+    width: 80%;
+    background-color: rgb(178, 221, 228);
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .contact-title {
+      font-size: 25px;
+      font-size: 2.5rem;
+      @include overTab {
+        font-size: 40px;
+        font-size: 4rem;
+      }
+    }
+    .contact-nav {
+      margin-top: 20px;
+      a {
+        display: inline-block;
+        color: rgb(178, 221, 228);
+        background-color: black;
+        padding: 15px 30px;
+        border-radius: 50px;
+        @include overTab {
+          padding: 15px 50px;
+          font-size: 20px;
+          font-size: 2rem;
+        }
+        &:hover {
+          background-color: rgb(152, 218, 228);
+          color: black;
+          transition: 0.3s;
+        }
+      }
+    }
+    .contact-desc {
+      margin-top: 30px;
+      @include overTab {
+        font-size: 20px;
+        font-size: 2rem;
+      }
+    }
+  }
+}

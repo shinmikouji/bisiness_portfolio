@@ -1,0 +1,25 @@
+// RESPONSIVE
+// @include overTab
+//--------------------------------------------------
+
+@mixin overTab {
+	@media print,screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+// UTILITY
+//--------------------------------------------------
+
+._sp {
+	@include overTab {
+		display: none;
+	}
+}
+
+._pc {
+	display: none;
+	@include overTab {
+		display: block;
+	}
+}

@@ -1,0 +1,37 @@
+.aboutme {
+  padding: 60px;
+  margin-top: 50px;
+  text-align: center;
+  background-image: url('../../image/sky.jpg');
+  background-size: cover;
+  .inner {
+    .myphoto {
+      width: 400px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+    .introduce {
+      margin-top: 30px;
+      font-size: 24px;
+      font-size: 2.4rem;
+    }
+    .intro-cont {
+      margin-top: 15px;
+      padding: 10px;
+      .intro-text {
+        line-height: 1.5;
+      }
+    }
+    .education {
+      margin-top: 20px;
+      font-size: 24px;
+      font-size: 2.4rem;
+    }
+    .education-cont {
+      margin-top: 15px;
+      .edu-text {
+        line-height: 1.5;
+      }
+    }
+  }
+}

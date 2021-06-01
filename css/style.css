@@ -1,0 +1,661 @@
+@media print, screen and (min-width: 768px) {
+  ._sp {
+    display: none;
+  }
+}
+
+._pc {
+  display: none;
+}
+
+@media print, screen and (min-width: 768px) {
+  ._pc {
+    display: block;
+  }
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Hiragino Mincho Pro',serif;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  letter-spacing: 2px;
+}
+
+.cmn-title {
+  padding-bottom: 15px;
+  font-size: 28px;
+  font-size: 2.8rem;
+  position: relative;
+  text-align: center;
+}
+
+.cmn-title:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100px;
+  height: 2px;
+  display: block;
+  content: "";
+  background-color: #fcc72c;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.header .header-fixed {
+  background-color: #b2dde4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-box-shadow: 0 4px 4px grey;
+          box-shadow: 0 4px 4px grey;
+  z-index: 2;
+}
+
+@media print, screen and (min-width: 768px) {
+  .header .header-fixed {
+    height: 70px;
+  }
+}
+
+.header .header-title {
+  font-size: 40px;
+  font-size: 4rem;
+  margin-left: 20px;
+  color: #fff;
+  font-family: 'Alegreya Sans SC';
+}
+
+.header .nav-btn {
+  width: 40px;
+  height: 30px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  border: none;
+  font: inherit;
+  outline: none;
+  position: relative;
+  right: 30px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .header .nav-btn {
+    display: none;
+  }
+}
+
+.header .nav-btn.-active span {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.header .nav-btn.-active span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header .nav-btn.-active span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header .nav-btn.-active span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header .nav-btn span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.header .nav-btn span:first-child {
+  top: 0;
+}
+
+.header .nav-btn span:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.header .nav-btn span:last-child {
+  bottom: 0;
+}
+
+.header .nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ccc;
+  padding-top: 130px;
+  font-size: 20px;
+  font-size: 2rem;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+@media print, screen and (min-width: 768px) {
+  .header .nav {
+    width: initial;
+    background-color: transparent;
+    padding-top: 0;
+    z-index: 3;
+    left: inherit;
+    right: 0;
+    top: 25px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.header .nav.-active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.header .header-list {
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .header .header-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 40px;
+    padding-bottom: 0;
+  }
+}
+
+.header .header-list .header-item + .header-item {
+  margin-top: 20px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .header .header-list .header-item + .header-item {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
+.header .header-list a {
+  color: #fff;
+  font-size: 24px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .header .header-list a {
+    font-size: 16px;
+  }
+}
+
+.header .header-list a:hover {
+  color: grey;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #ccc;
+  text-align: center;
+}
+
+@media print, screen and (min-width: 768px) {
+  .footer {
+    padding: 30px 0;
+  }
+}
+
+.footer .copyright {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+@media print, screen and (min-width: 768px) {
+  .footer .copyright {
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+}
+
+.hero {
+  margin-top: 130px;
+  background-image: url("../../image/hero.jpg");
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.hero .hero-text {
+  text-align: center;
+  padding-top: 12%;
+  padding-bottom: 12%;
+  background-color: rgba(151, 205, 212, 0.5);
+}
+
+.hero .hero-text .top-title {
+  font-size: 35px;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+
+.hero .hero-text .top-desc {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.aboutme {
+  padding: 60px;
+  margin-top: 50px;
+  text-align: center;
+  background-image: url("../../image/sky.jpg");
+  background-size: cover;
+}
+
+.aboutme .inner .myphoto {
+  width: 400px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+.aboutme .inner .introduce {
+  margin-top: 30px;
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+.aboutme .inner .intro-cont {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.aboutme .inner .intro-cont .intro-text {
+  line-height: 1.5;
+}
+
+.aboutme .inner .education {
+  margin-top: 20px;
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+.aboutme .inner .education-cont {
+  margin-top: 15px;
+}
+
+.aboutme .inner .education-cont .edu-text {
+  line-height: 1.5;
+}
+
+.concept {
+  padding: 60px 40px;
+  background-color: #f0efef;
+}
+
+@media print, screen and (min-width: 768px) {
+  .concept {
+    padding: 80px 60px;
+  }
+}
+
+.concept .concept-list {
+  margin-top: 60px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .concept .concept-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 40px;
+  }
+}
+
+.concept .concept-list .concept-item {
+  text-align: center;
+  width: 100%;
+}
+
+@media print, screen and (min-width: 768px) {
+  .concept .concept-list .concept-item {
+    width: 25%;
+    text-align: center;
+  }
+}
+
+.concept .concept-list .concept-item + .concept-item {
+  margin-top: 40px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .concept .concept-list .concept-item + .concept-item {
+    margin-left: 20px;
+  }
+}
+
+.concept .concept-list .concept-item .concept-logo {
+  color: aquamarine;
+}
+
+.concept .concept-list .concept-item .text {
+  margin-top: 30px;
+}
+
+.concept .concept-list .concept-item .text .concept-title {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.concept .concept-list .concept-item .text .concept-desc {
+  margin-top: 10px;
+  line-height: 1.8;
+}
+
+.service {
+  padding: 60px 40px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .service {
+    padding: 80px 60px;
+  }
+}
+
+.service .service-list {
+  margin-top: 60px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .service .service-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+  }
+}
+
+.service .service-list .service-item {
+  -webkit-box-shadow: 0 0 14px grey;
+          box-shadow: 0 0 14px grey;
+}
+
+.service .service-list .service-item + .service-item {
+  margin-top: 60px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .service .service-list .service-item + .service-item {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+}
+
+.service .service-list .service-item .coding-image:first-child {
+  width: 100%;
+  height: 280px;
+}
+
+.service .service-list .service-item .title {
+  padding: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.service .service-list .service-item .text {
+  padding: 8px;
+  text-align: center;
+}
+
+.service .service-list .service-item .text .price {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.flow {
+  padding: 60px 40px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .flow {
+    padding: 80px 60px;
+  }
+}
+
+.flow .flow-list {
+  margin-top: 40px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .flow .flow-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 40px;
+  }
+}
+
+.flow .flow-list .flow-item {
+  margin-bottom: 20px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .flow .flow-list .flow-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20%;
+    padding-right: 20px;
+  }
+}
+
+.flow .flow-list .flow-item .flow-text {
+  text-align: center;
+}
+
+@media print, screen and (min-width: 768px) {
+  .flow .flow-list .flow-item .flow-text {
+    padding-right: 20px;
+  }
+}
+
+.flow .flow-list .flow-item .flow-text .title {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+@media print, screen and (min-width: 768px) {
+  .flow .flow-list .flow-item .flow-text .title {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
+.flow .flow-list .flow-item .flow-text .desc {
+  margin-bottom: 20px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .flow .flow-list .arrow {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+  }
+}
+
+@media print, screen and (min-width: 768px) {
+  .flow .flow-list .arrow::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 0px;
+    border-top: solid 2px #5bc0de;
+    border-right: solid 2px #5bc0de;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -4px;
+  }
+}
+
+.flow .flow-list .down-arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #97cdd4;
+}
+
+@media print, screen and (min-width: 768px) {
+  .flow .flow-list .down-arrow {
+    display: none;
+  }
+}
+
+.contact {
+  color: #fff;
+  padding: 0 0 50px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .contact {
+    padding: 0 0 90px;
+  }
+}
+
+.contact .inner {
+  width: 80%;
+  background-color: #b2dde4;
+  -webkit-box-shadow: 10px 10px 10px grey;
+          box-shadow: 10px 10px 10px grey;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.contact .inner .contact-title {
+  font-size: 25px;
+  font-size: 2.5rem;
+}
+
+@media print, screen and (min-width: 768px) {
+  .contact .inner .contact-title {
+    font-size: 40px;
+    font-size: 4rem;
+  }
+}
+
+.contact .inner .contact-nav {
+  margin-top: 20px;
+}
+
+.contact .inner .contact-nav a {
+  display: inline-block;
+  color: #b2dde4;
+  background-color: black;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .contact .inner .contact-nav a {
+    padding: 15px 50px;
+    font-size: 20px;
+    font-size: 2rem;
+  }
+}
+
+.contact .inner .contact-nav a:hover {
+  background-color: #98dae4;
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact .inner .contact-desc {
+  margin-top: 30px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .contact .inner .contact-desc {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
