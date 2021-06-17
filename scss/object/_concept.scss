@@ -13,14 +13,14 @@
       margin-top: 40px;
     }
     .concept-item {
-      text-align: center;
       width: 100%;
+      margin-top: 40px;
+      text-align: center;
       @include overTab {
         width: 25%;
         text-align: center
       }
       + .concept-item {
-        margin-top: 40px;
         @include overTab {
           margin-left: 20px;
         }
@@ -36,6 +36,8 @@
         }
         .concept-desc {
           margin-top: 10px;
+          font-size: 14px;
+          font-size: 1.4rem;
           line-height: 1.8;
         }
       }
