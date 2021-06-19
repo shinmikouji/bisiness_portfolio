@@ -251,7 +251,7 @@ html {
 
 .hero {
   margin-top: 130px;
-  background-image: url("/image/hero.jpg");
+  background-image: url("https://shinmikouji.github.io/image/hero.jpg");
   background-size: cover;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -279,7 +279,7 @@ html {
   padding: 60px;
   margin-top: 50px;
   text-align: center;
-  background-image: url("/image/sky.jpg");
+  background-image: url("https://shinmikouji.github.io/sky.jpg");
   background-size: cover;
 }
 
